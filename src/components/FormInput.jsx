@@ -41,7 +41,7 @@ const FormInput = () => {
 
     return (
         <article className="form-main">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolor ullam impedit, deleniti architecto pariatur itaque laboriosam explicabo! Necessitatibus dolor aliquid nesciunt et accusantium mollitia amet laudantium nam inventore deserunt!</p>
+            <p>Lorem ipsum dolor </p>
             <form onSubmit={handleSubmit(submit)}>
 
                 <input type="text" autoComplete='off' placeholder='Write your name' {...register('name')} />
