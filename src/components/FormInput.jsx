@@ -7,8 +7,10 @@ import './formInput.css'
 
 const FormInput = () => {
 
-    const URL = 'https://sheet.best/api/sheets/467b28b1-9c4b-4dde-ae83-7d4332f51064'
+    const URL = 'https://script.google.com/macros/s/AKfycbxnESoeuR16-er-GRF8Aql6uNoQAHt11yxsGFabtN5gKDd7Ayw7K7YwHkgb2oO5-C10Iw/exec?action=data'
     const URL1 = 'https://script.google.com/macros/s/AKfycbx6mf1CTQYKI20R1jqubUi42Vxy-O_Zh8Dzhi9N5y42Uw_wrQD0g-ee2pAq0S2D5un9Pg/exec?action=data'
+
+    const URL3 = 'https://script.google.com/macros/s/AKfycbyZh4W_DkjAqyn3D3IC5VmiyrRk1HKCDzR8gwteQJm88POKL8bS7wbzCoc25cQFYCqg_A/exec?action=data'
 
 
   
@@ -32,7 +34,7 @@ const FormInput = () => {
 
     const submit = (data) => {
         setGetData(data)
-        axios.post(URL,data)
+        axios.post(URL3,data)
         .then(res => console.log(res))
         .catch(err => console.log(err))
         reset(resetData)

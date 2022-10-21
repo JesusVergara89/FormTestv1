@@ -6,7 +6,8 @@ import { DotSpinner } from '@uiball/loaders'
 
 const DataBase = () => {
 
-    const URL = 'https://script.google.com/macros/s/AKfycbxNCNZg2fqtqSbEKs52io1xsYzD04ZJH-UkSLiWVPswWFVh6nC2fwIVmloLxjO-ZCk55w/exec?action=data'
+
+    const URL = 'https://dog.ceo/api/breeds/list/all'
 
 
     const [catchData, setCatchData] = useState()
@@ -21,6 +22,8 @@ const DataBase = () => {
             .catch(err => console.log(err))
     }, [])
 
+   
+
 
 
     return (
@@ -32,21 +35,8 @@ const DataBase = () => {
                     color="black"
                 />
                 :
-                ''
+                <div></div>
             }
-
-            {loadingScreen ?
-                ''
-                :
-                (
-                    catchData?.map((user, index) => {
-                        return (
-                            <Card key={index} user={user} />
-                        )
-                    })
-                )
-            }
-
 
         </article>
     )
